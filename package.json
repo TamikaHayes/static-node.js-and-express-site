@@ -1,0 +1,24 @@
+{
+  "name": "static-node.js-and-express-site",
+  "version": "1.0.0",
+  "description": "project portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TamikaHayes/static-node.js-and-express-site.git"
+  },
+  "keywords": [
+    "Node",
+    "Express",
+    "Pug"
+  ],
+  "author": "Tamika J. Hayes",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TamikaHayes/static-node.js-and-express-site/issues"
+  },
+  "homepage": "https://github.com/TamikaHayes/static-node.js-and-express-site#readme"
+}
