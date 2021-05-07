@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/TamikaHayes/static-node.js-and-express-site/issues"
   },
-  "homepage": "https://github.com/TamikaHayes/static-node.js-and-express-site#readme"
+  "homepage": "https://github.com/TamikaHayes/static-node.js-and-express-site#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
