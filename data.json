@@ -4,31 +4,48 @@
             "id": 0, 
             "project name": "Random Quote Generator",
             "description": "An app that generates random inspirational quotes at the click of a button",
-            "technologies": [ "HTML", "CSS", "JavaScript"]
+            "technologies": [ "HTML", "CSS", "JavaScript"],
+            "live_link": "https://tamikahayes.github.io/random-quote-generator/",
+            "github_link": "https://github.com/TamikaHayes/random-quote-generator",
+            "image_urls": ["./images/quote_generator_main_v2.png", "./images/quote_generator_01_v2.png", "./images/quote_generator_02.png"]
+
         },
         {
             "id": 1,
             "project name": "Vanilla JS Student Directory",
             "description": "A student directory with data pagination",
-            "technologies": [ "HTML", "CSS", "JavaScript"]
+            "technologies": [ "HTML", "CSS", "JavaScript"],
+            "live_link": "https://tamikahayes.github.io/vanillajs-student-directory/",
+            "github_link": "https://github.com/TamikaHayes/vanillajs-student-directory",
+            "image_urls": ["./images/vanillajs_student_directory_main.png", "./images/vanillajs_student_directory_01.png", "./images/vanillajs_student_directory_02.png"]
         },
         {
             "id": 2,
             "project name": "JS Interactive Registration Form",
             "description": "A registration form for a fictional online conference, responsive to user input",
-            "technologies": [ "HTML", "CSS", "JavaScript"]
+            "technologies": [ "HTML", "CSS", "JavaScript"],
+            "live_link": "https://tamikahayes.github.io/js-interactive-reg-form/",
+            "github_link": "https://github.com/TamikaHayes/js-interactive-reg-form",
+            "image_urls": ["./images/js_interactive_reg_form_main.png", "./images/js_interactive_reg_form_01.png", "./images/js_interactive_reg_form_02.png"]
         },
         {
             "id": 3,
             "project name": "Phrase Hunter Game",
             "description": "A game in which users guess a hidden phrase using an onscreen keyboard; built with OOP",
-            "technologies": [ "HTML", "CSS", "JavaScript"]
+            "technologies": [ "HTML", "CSS", "JavaScript"],
+            "live_link": "https://tamikahayes.github.io/phrase-hunter-game-oop-js/",
+            "github_link": "https://github.com/TamikaHayes/phrase-hunter-game-oop-js",
+            "image_urls": ["./images/phrase_hunter_game_oop_js_main.png", "./images/phrase_hunter_game_oop_js_01.png", "./images/phrase_hunter_game_oop_js_02.png"]
         },
         {
             "id": 4,
             "project name": "Public API Employee Directory",
             "description": "An employee directory for a fictional startup, which pulls data from the Random User API",
-            "technologies": [ "HTML", "CSS", "JavaScript", "Fetch", "JSON"]
+            "technologies": [ "HTML", "CSS", "JavaScript", "Fetch", "JSON"],
+            "live_link": "https://tamikahayes.github.io/public-api-requests-employee-directory/",
+            "github_link": "https://github.com/TamikaHayes/public-api-requests-employee-directory",
+            "image_urls": ["./images/public_api_requests_main.png", "./images/public_api_requests_01.png", "./images/public_api_requests_02.png"]
+            
         }
     ]
 }
