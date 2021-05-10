@@ -1,0 +1,34 @@
+{
+    "projects": [
+        {
+            "id": 0, 
+            "project name": "Random Quote Generator",
+            "description": "An app that generates random inspirational quotes at the click of a button",
+            "technologies": [ "HTML", "CSS", "JavaScript"]
+        },
+        {
+            "id": 1,
+            "project name": "Vanilla JS Student Directory",
+            "description": "A student directory with data pagination",
+            "technologies": [ "HTML", "CSS", "JavaScript"]
+        },
+        {
+            "id": 2,
+            "project name": "JS Interactive Registration Form",
+            "description": "A registration form for a fictional online conference, responsive to user input",
+            "technologies": [ "HTML", "CSS", "JavaScript"]
+        },
+        {
+            "id": 3,
+            "project name": "Phrase Hunter Game",
+            "description": "A game in which users guess a hidden phrase using an onscreen keyboard; built with OOP",
+            "technologies": [ "HTML", "CSS", "JavaScript"]
+        },
+        {
+            "id": 4,
+            "project name": "Public API Employee Directory",
+            "description": "An employee directory for a fictional startup, which pulls data from the Random User API",
+            "technologies": [ "HTML", "CSS", "JavaScript", "Fetch", "JSON"]
+        }
+    ]
+}
