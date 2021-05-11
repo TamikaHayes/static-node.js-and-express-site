@@ -3,16 +3,16 @@
 
 const express = require('express');
 const router = express.Router();
-const { projects } = require('./data.json');
+const { projects } = require('../data.json');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
     //Pass all project data to 'index' pug template
-    res.render('index');
+    res.render('index', { projects });
 });
 
 /* GET about page. */
-router.get('/about', function(req, res, next) {
+router.get('/about', (req, res) => {
     //Pass all personal data to 'about' pug template
     res.render('about');
 });
@@ -24,8 +24,10 @@ router.get('/projects/:id', function(req, res, next) {
     
     if (project) {
       // 2. Pass the project data to the 'project' pug template
-      res.render('project');
+      res.render('project', { project });
     } else {
       res.sendStatus(404);
     }
   });
+
+  module.exports = router;
