@@ -30,22 +30,29 @@ app.use('/', indexRouter);
 
 // 404 handler to catch undefined or nonexistent route requests
 app.use((req, res, next) => {
-    console.log("Blimey! Looks like you've encountered a 404 error.");
+    //const err = new Error();
+    //err.status = 404;
+    console.log (`Blimey! Looks like you've encountered an error. Status: ${err.status}`);
+    //err.message = `Blimey! Looks like you've encountered an error. Page not found: `;
+    //console.log (err.message `${err.status}`);
     res.status(404).render('page-not-found');
-  });
+});
   
-  // Global error handler
-  app.use((err, req, res, next) => {
+// Global error handler
+app.use((err, req, res, next) => {
 
     if (err) {
-        console.log('Fiddlesticks! Something went wrong on the server.', err);
+        console.log('Fiddlesticks! Something went wrong.', err );
     }
+    //handle errors caught by route handlers
     if (err.status === 404) {
         res.status(404).render('page-not-found', { err });
     } else {
-        err.message = 'Oh snap! It looks like something went wrong on the server.';
+        const err = new Error();
         err.status = 500;
-        res.status(500).render('error', { err });
+        err.message = err.message || `Oh snap! Looks like something went wrong on the server. Status: ${err.status}`;
+        console.log(err.message);
+        res.status(err.status || 500).render('error', { err });
     }
 });
 

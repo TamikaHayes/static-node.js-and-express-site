@@ -22,21 +22,39 @@ router.get('/', function(req, res, next) {
 /* GET about page. */
 router.get('/about', (req, res) => {
     //Pass all personal data to 'about' pug template
-    //throw new Error (500); //tests Server error handler functionality
+    throw new Error (500); //tests Server error handler functionality
     res.render('about');
     
 });
+
+/*GET generated error route - create and throw 500 error*/
+router.get('/error', (req, res, next) => {
+
+  // Log out custom error handler indication
+  //console.log('Uh-oh. Looks like something went wrong with the server.');
+  
+  const err = new Error();
+  err.status = 500;
+  err.message = `Uh-oh. Looks like trouble with the server. Status: ${err.status}`;
+  throw err;
+});
+
 
 /* GET project pages dynamically, based on id property. */
 router.get('/projects/:id', function(req, res, next) {
     const projectId = req.params.id;
     const project = projects.find( ({ id }) => id === +projectId );
     
+    //check to see if requested project page exists
     if (project) {
-      // 2. Pass the project data to the 'project' pug template
+      // if true, pass the project data to the 'project' pug template
       res.render('project', { project });
     } else {
-      res.sendStatus(404);
+      const err = new Error();
+      err.status = 404;
+      err.message = `Looks like the page you requested doesn't exist. Status: ${err.status}`;
+      next(err);
+      
     }
   });
 
