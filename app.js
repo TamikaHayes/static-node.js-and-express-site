@@ -30,7 +30,7 @@ app.use('/', indexRouter);
 
 // 404 handler to catch undefined or nonexistent route requests
 app.use((req, res, next) => {
-    console.log('404 error handler called');
+    console.log("Blimey! Looks like you've encountered a 404 error.");
     res.status(404).render('page-not-found');
   });
   
@@ -38,7 +38,7 @@ app.use((req, res, next) => {
   app.use((err, req, res, next) => {
 
     if (err) {
-        console.log('Global error handler called', err);
+        console.log('Fiddlesticks! Something went wrong on the server.', err);
     }
     if (err.status === 404) {
         res.status(404).render('page-not-found', { err });

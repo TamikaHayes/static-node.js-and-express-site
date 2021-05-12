@@ -4,7 +4,7 @@ block content
   div.container
     h1= `Server Error`
     h2= `Error status code: ${err.status} - Server Error`
-    p.error-p= `Human-friendly error message: ${err.message}`
+    p.error-p= `${err.message}`
 
     a.home(href=`/`) Return to the Home Page
 
