@@ -22,7 +22,7 @@ body {
   line-height: 1.5;
   color: #0a0a0a;
   background: #fefefe;
-  background: #000;
+  background: rgb(236, 182, 120);
   transform: translateX(0px);
   transition: all 0.4s ease-out;
 }
@@ -246,7 +246,7 @@ nav a span {
 
 .projects-box h5 {
   font-family: 'Courier New', monospace;
-  font-weight: 600;
+  font-weight: 00;
   font-size: 13px;
   letter-spacing: 2.25px;
   text-transform: uppercase;
