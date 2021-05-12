@@ -1,3 +1,11 @@
+/**
+ * Treehouse FSJS Techdegree
+ * Project 6 - Static Node.js and Express Site
+ * Tamika Hayes
+ * May 11, 2021
+ * app.js
+ */
+
 
 'use strict';
 
@@ -40,21 +48,6 @@ app.use((req, res, next) => {
         res.status(500).render('error', { err });
     }
 });
-
-//     // set locals, only providing error in development
-//     res.locals.message = err.message;
-//     res.locals.error = req.app.get('env') === 'development' ? err : {};
-  
-//     // render the error page
-//     res.status(err.status || 500);
-//     res.render('error');
-//   });
-
-
-// app.get('/', (req, res) => {
-//     res.send('Successful response.');
-//     console.log( { projects } );
-// });
 
 app.listen(3000, () => console.log('Portfolio app is listening on port 3000.'))
 

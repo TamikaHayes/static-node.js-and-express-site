@@ -1,3 +1,11 @@
+/**
+ * Treehouse FSJS Techdegree
+ * Project 6 - Static Node.js and Express Site
+ * Tamika Hayes
+ * May 11, 2021
+ * index.js
+ */
+
 
 'use strict';
 
@@ -14,7 +22,7 @@ router.get('/', function(req, res, next) {
 /* GET about page. */
 router.get('/about', (req, res) => {
     //Pass all personal data to 'about' pug template
-    //throw new Error (500);
+    //throw new Error (500); //tests Server error handler functionality
     res.render('about');
     
 });
