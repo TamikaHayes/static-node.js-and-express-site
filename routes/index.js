@@ -22,7 +22,6 @@ router.get('/', function(req, res, next) {
 /* GET about page. */
 router.get('/about', (req, res) => {
     //Pass all personal data to 'about' pug template
-    throw new Error (500); //tests Server error handler functionality
     res.render('about');
     
 });
