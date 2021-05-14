@@ -42,7 +42,7 @@ app.use((req, res, next) => {
 app.use((err, req, res, next) => {
 
     if (err) {
-        console.log('Fiddlesticks! Something went wrong.', err );
+        console.log('Fiddlesticks! Something went wrong.');
     }
     //handle errors caught by route handlers
     if (err.status === 404) {
@@ -51,7 +51,7 @@ app.use((err, req, res, next) => {
         const err = new Error();
         err.status = 500;
         err.message = err.message || `Oh snap! Looks like something went wrong on the server. Status: ${err.status}`;
-        console.log(err.message);
+        console.log(err.message, err);
         res.status(err.status || 500).render('error', { err });
     }
 });
